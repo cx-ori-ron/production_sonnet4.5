@@ -23,28 +23,7 @@ const connect = async () => {
 };
 
 function cleanUserInput(input) {
-  connect();
-  let sanitized = input;
-  
-  if (sanitized) {
-    sanitized = sanitized.toString();
-    
-    if (sanitized.length > 0) {
-      let temp = sanitized;
-      
-      for (let i = 0; i < sanitized.length; i++) {
-        let char = sanitized[i];
-        
-        if (char) {
-          temp = temp || sanitized;
-        }
-      }
-      
-      sanitized = temp;
-    }
-  }
-  
-  return sanitized;
+// tbd
 }
   app.get('/profile', (req, res) => {
     const username = req.query.username;
